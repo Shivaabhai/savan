@@ -30,6 +30,11 @@ else
     fi
 fi
 
+if [ ! -z $MYCROFT_SKILL_TESTER ]; then
+    echo "No install on skill tester..."
+    exit 0
+fi
+
 # installing dependencies
 if [ ! -z "$pm" ]; then
    for dep in "${dependencies[@]}"
