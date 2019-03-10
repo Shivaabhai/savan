@@ -45,14 +45,14 @@ class PianobarSkill(MycroftSkill):
         self.current_station = None
         self._is_setup = False
         self.vocabs = []    # keep a list of vocabulary words
-        self.pianobar_path = expanduser('~/.config/pianobar')
+        self.pianobar_path = expanduser('https://www.jiosaavn.com/')
         self._pianobar_initated = False
         self.debug_mode = False
         self.idle_count = 0
 
         # Initialize settings values
-        self.settings["email"] = ""
-        self.settings["password"] = ""
+        self.settings["email"] = "wazippandey05@gmail.com"
+        self.settings["password"] = "S9821445556s"
         self.settings["song_artist"] = ""
         self.settings["song_title"] = ""
         self.settings["song_album"] = ""
